@@ -27,8 +27,8 @@ const server = http.createServer(basic, (req, res) => {
       if (req.url === '/enquetes/yaki-shabu') {
         res.write(jade.renderFile('./form.jade', {
           path: req.url,
-          firstItem: '焼き肉',
-          secondItem: 'しゃぶしゃぶ'
+          firstItem: 'かるび',
+          secondItem: 'そーめん'
         }));
       } else if (req.url === '/enquetes/rice-bread') {
         res.write(jade.renderFile('./form.jade', {
