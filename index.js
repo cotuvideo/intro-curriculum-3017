@@ -30,7 +30,7 @@ const server = http.createServer(basic, (req, res) => {
         res.write(jade.renderFile('./form.jade', {
           path: req.url,
           firstItem: 'かるび',
-          secondItem: 'しゃぶしゃぶ'
+          secondItem: 'そーめん'
         }));
       } else if (req.url === '/enquetes/rice-bread') {
         res.write(jade.renderFile('./form.jade', {
